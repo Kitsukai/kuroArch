@@ -36,6 +36,7 @@ rankmirrors -n 0 /etc/pacman.d/mirrorlist.backup > /etc/pacman.d/mirrorlist
 
 #------------------------------------------------------------
 #installing base files for system
+pacman -Syy
 pacstrap /mnt base base-devel
 
 #generating fastab
